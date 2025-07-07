@@ -1,0 +1,87 @@
+🚀 TWITTER TOKEN MANAGER - HIZLI KURULUM
+
+=== GEREKSINIMLER ===
+✅ Node.js v18+ (https://nodejs.org)
+✅ Minimum 4GB RAM
+✅ Stabil internet bağlantısı
+
+=== KURULUM ADIMLARI ===
+
+1️⃣ Node.js'i indirin ve kurun:
+   → https://nodejs.org
+   → "LTS" versiyonunu seçin
+   → Kurulum tamamlandıktan sonra bilgisayarı yeniden başlatın
+
+2️⃣ Proje dosyalarını açın:
+   → Klasöre sağ tıklayın
+   → "Terminal'de Aç" veya "PowerShell'de A��" seçin
+
+3️⃣ Bağımlılıkları yükleyin:
+   → Terminal'de şu komutu yazın: npm install
+   → Kurulum 2-5 dakika sürebilir
+
+4️⃣ Sistemi başlatın:
+   → Terminal'de şu komutu yazın: npm run dev
+   → "Server running" mesajını bekleyin
+
+5️⃣ Tarayıcınızda açın:
+   → http://localhost:8080 adresine gidin
+   → Twitter Token Manager açılacak
+
+=== KULLANIM ===
+
+📝 TEKİL HESAP:
+   → Kullanıcı adı: @olmadan (örnek: john_doe)
+   → Şifre: Hesap şifresi
+   → 2FA: Doğrulama kodu (opsiyonel)
+
+📁 TOPLU IMPORT:
+   Format 1: kullanici:sifre
+   Format 2: kullanici:sifre:token  
+   Format 3: kullanici:sifre:2fa_kodu
+
+💾 EXPORT:
+   → Auth:CT0 formatında indirebilirsiniz
+   → Detaylı format da mevcut
+
+=== HIZLI TEST ===
+
+1. Tek hesap ekleyin
+2. İşlemi tamamlamasını bekleyin
+3. Token'ları "Auth:CT0 İndir" ile indirin
+
+=== SORUN ÇÖZÜM ===
+
+❌ "Command not found" hatası:
+   → Node.js doğru kurulmamış
+   → PATH değişkenini kontrol edin
+
+❌ "Port already in use" hatası:
+   → Terminal'de: npx kill-port 8080
+   → Sonra tekrar: npm run dev
+
+❌ "Timeout" hatası:
+   → İnternet bağlantınızı kontrol edin
+   → Firewall ayarlarını kontrol edin
+
+❌ "2FA gerekli" hatası:
+   → 2FA kodunu hesap bilgilerine ekleyin
+   → Authenticator app kullanın
+
+=== İLETİŞİM ===
+
+🐛 Hata bildirimi için log dosyalarını saklayın
+💡 Önerilerinizi iletebilirsiniz
+📖 Detaylı rehber: KURULUM_REHBERI.md
+
+=== ÖNEMLİ NOTLAR ===
+
+⚠️ Sadece kendi hesaplarınızı kullanın
+⚠️ Twitter kurallarına uygun davranın  
+⚠️ VPN kullanmanız önerilir
+⚠️ 2FA'yı aktif tutun
+
+🔥 ARTIK 2FA DESTEĞİ İLE DAHA GÜVENLİ!
+⚡ PARALEL İŞLEM İLE 5X DAHA HIZLI!
+
+Başarılar! 🎉

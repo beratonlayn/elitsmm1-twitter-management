@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Premium Twitter Token Manager Theme
+   * Dark-first design with electric accents and modern gradients
+   */
+  :root {
+    --background: 210 11% 6%;
+    --foreground: 210 20% 98%;
+
+    --card: 210 11% 8%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 11% 8%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 200 100% 60%;
+    --primary-foreground: 210 11% 6%;
+
+    --secondary: 210 11% 12%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 210 11% 10%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 270 100% 65%;
+    --accent-foreground: 210 11% 6%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 11% 15%;
+    --input: 210 11% 12%;
+    --ring: 200 100% 60%;
+
+    --radius: 0.75rem;
+
+    --electric-blue: 200 100% 60%;
+    --electric-purple: 270 100% 65%;
+    --neon-green: 120 100% 50%;
+    --warning-orange: 30 100% 55%;
+    --surface-dark: 210 11% 8%;
+    --surface-darker: 210 11% 6%;
+    --surface-light: 210 11% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-medium;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(210 11% 4%) 100%
+    );
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+
+  .electric-glow {
+    box-shadow: 0 0 20px hsl(var(--electric-blue) / 0.3);
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px hsl(var(--electric-blue));
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--electric-blue)),
+      hsl(var(--electric-purple))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from {
+      box-shadow: 0 0 20px hsl(var(--electric-blue) / 0.3);
+    }
+    to {
+      box-shadow:
+        0 0 30px hsl(var(--electric-blue) / 0.6),
+        0 0 40px hsl(var(--electric-purple) / 0.2);
+    }
+  }
+
+  .scroll-fade {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
+}
